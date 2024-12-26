@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página de Cocina - Sabor a Málaga</title>
+    <link href="./assets/styles/main.scss" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <include src="./views/header.html"></include>
+
+    <!-- Main Content -->
+    <main class="py-10">
+        <section class="text-center max-w-3xl mx-auto px-4">
+             <!-- Extraemos la imagen destacada -->
+             <include src="./views/comida-image.html"></include>
+            <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-4">
+                ¡Iniciate en el Sabor de la Cocina Malagueña Casera!
+            </h1>
+            
+             <!-- Extraemos los botones de acción -->
+             <include src="./views/buttons.html"></include>
+        </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+</body>
+</html>
