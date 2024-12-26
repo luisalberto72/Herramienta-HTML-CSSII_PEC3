@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
+  "name": "cocina-malaga",
   "version": "3.10.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Sitio web sobre cocina web",
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web --open",
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",

@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./src/**/*.{html,js}", // Cambia la ruta según tu estructura de archivos
+    "./src/**/*.{html,js}", 
   ],
   theme: {
     extend: {
