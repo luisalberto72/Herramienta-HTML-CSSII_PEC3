@@ -16,99 +16,99 @@
         </div>        
         <nav>
             <ul class="flex space-x-5">
-                <li><a href="./index.html" class="text-black text-base p-2">Home</a></li>
-                <li><a href="./recetas.html" class="text-black text-base p-2">Recetas</a></li>
-                <li><a href="./concursantes.html" class="text-white bg-black text-base p-2 rounded">Concursantes</a></li>
+                <li><a href="./index.html" class="text-gray-600 text-base p-2 hover:text-black">Home</a></li>
+                <li><a href="./recetas.html" class="text-gray-600 text-base p-2 hover:text-black">Recetas</a></li>
+                <li><a href="./concursantes.html" class="text-white bg-black text-base p-2 rounded hover:bg-gray-800">Concursantes</a></li>
             </ul>
         </nav>
     </header>
 
-<!-- Main Content -->
-<main class="p-12">
-    <h1 class="text-center text-4xl">Concursantes</h1>
-    <p class="text-center text-lg mt-20">Descubre los detalles de los concursantes en el Cooking Contest 2024.</p>
-    <img src="./assets/images/contestants.jpg" alt="Imagen de los concursantes" class="block mx-auto max-w-3/4 h-auto rounded-lg border border-gray-300 shadow-lg my-20" />
+    <!-- Main Content -->
+    <main class="p-12">
+        <h1 class="text-center text-4xl font-bold">Concursantes</h1>
+        <p class="text-center text-lg mt-5 text-gray-700">Descubre los detalles de los concursantes en el Cooking Contest 2024.</p>
+        <img src="./assets/images/contestants.jpg" alt="Imagen de los concursantes" class="block mx-auto max-w-3/4 h-auto rounded-lg border border-gray-300 shadow-lg my-10" />
 
-    <div class="max-w-3/4 mx-auto text-left">
-        <h2 class="text-2xl mb-3">Recetas</h2>
-        <p class="text-base mb-5">Explora las recetas más innovadoras creadas por los concursantes.</p>
-    </div>
+        <div class="max-w-3/4 mx-auto text-left">
+            <h2 class="text-2xl mb-3 font-semibold">Recetas</h2>
+            <p class="text-base mb-5 text-gray-600">Explora las recetas más innovadoras creadas por los concursantes.</p>
+        </div>
 
-    <!-- Tarjetas en una sola columna en móviles -->
-    <div class="flex flex-col md:flex-row justify-between gap-5 max-w-3/4 mx-auto">
-        <div class="w-full md:w-1/3 border border-gray-300 p-5 rounded-lg shadow-sm text-left">
-            <h3 class="text-lg mb-4">Pasta cajún con mariscos</h3> 
-            <img src="./assets/images/JohnCooper.jpg" alt="Receta 1" class="w-12 h-12 float-left mr-3 rounded-full">
-            <div class="ml-16">
-                <strong class="font-bold">John Cooper</strong>
-                <p class="text-sm">Esta receta de pasta con mariscos al estilo cajún es picante, ¡pero deliciosa!</p>
+        <!-- Tarjetas de recetas -->
+        <div class="flex flex-col md:flex-row justify-between gap-5 max-w-3/4 mx-auto">
+            <!-- Componente reutilizable para las tarjetas -->
+            <div class="recipe-card2">
+                <h3 class="text-lg mb-4 font-semibold">Pasta cajún con mariscos</h3>
+                <img src="./assets/images/JohnCooper.jpg" alt="Receta 1" class="w-12 h-12 float-left mr-3 rounded-full">
+                <div class="ml-16">
+                    <strong class="font-bold">John Cooper</strong>
+                    <p class="text-sm text-gray-600">Esta receta de pasta con mariscos al estilo cajún es picante, ¡pero deliciosa!</p>
+                </div>
+            </div>
+            <div class="recipe-card2">
+                <h3 class="text-lg mb-4 font-semibold">Salmón en tablones de cedro</h3>
+                <img src="./assets/images/MartaAlonso.jpg" alt="Receta 2" class="w-12 h-12 float-left mr-3 rounded-full">
+                <div class="ml-16">
+                    <strong class="font-bold">Marta Alonso</strong>
+                    <p class="text-sm text-gray-600">El salmón alcanza su máximo potencial cuando se asa sobre una tabla de cedro.</p>
+                </div>
+            </div>
+            <div class="recipe-card2">
+                <h3 class="text-lg mb-4 font-semibold">Pollo al vinagre</h3>
+                <img src="./assets/images/MaryAnn.jpg" alt="Receta 3" class="w-12 h-12 float-left mr-3 rounded-full">
+                <div class="ml-16">
+                    <strong class="font-bold">Mary Ann Stones</strong>
+                    <p class="text-sm text-gray-600">Pollo irresistible, cocinado con vinagre.</p>
+                </div>
             </div>
         </div>
-        <div class="w-full md:w-1/3 border border-gray-300 p-5 rounded-lg shadow-sm text-left">
-            <h3 class="text-lg mb-4">Salmón en tablones de cedro</h3>
-            <img src="./assets/images/MartaAlonso.jpg" alt="Receta 2" class="w-12 h-12 float-left mr-3 rounded-full">
-            <div class="ml-16">
-                <strong class="font-bold">Marta Alonso</strong>
-                <p class="text-sm">El salmón alcanza su máximo potencial cuando
-                    se asa sobre una tabla de cedro.</p>
+        <hr class="my-20">
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white p-12 max-w-3/4 mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- Sección izquierda: Título y redes sociales -->
+        <div class="flex flex-col gap-3 text-lg mb-5 md:mb-0 md:w-2/5 order-2 sm:order-1">
+            <div class="mb-8"><strong>Cooking Contest 2024 Edition</strong></div>
+            <div class="flex space-x-5 mt-5">
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-twitter h-6"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram h-6"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-youtube h-6"></i></a>
             </div>
         </div>
-        <div class="w-full md:w-1/3 border border-gray-300 p-5 rounded-lg shadow-sm text-left">
-            <h3 class="text-lg mb-4">Pollo al vinagre</h3>
-            <img src="./assets/images/MaryAnn.jpg" alt="Receta 3" class="w-12 h-12 float-left mr-3 rounded-full">
-            <div class="ml-16">
-                <strong class="font-bold">Mary Ann Stones</strong>
-                <p class="text-sm">Pollo irresistible, cocinado
-                    con vinagre.</p>
-            </div>
+
+        <!-- Sección derecha: Tabla -->
+        <div class="w-full md:w-3/5 order-1 sm:order-2 overflow-auto">
+            <table class="w-full table-auto border-separate border-spacing-2 text-gray-600">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="p-2 text-left">Recetas</th>
+                        <th class="p-2 text-left">Concursantes</th>
+                        <th class="p-2 text-left">Edición</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2 whitespace-nowrap">Pasta cajún con mariscos</td>
+                        <td class="p-2 whitespace-nowrap">John Cooper</td>
+                        <td class="p-2 whitespace-nowrap">2024</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 whitespace-nowrap">Salmón en tablones de cedro</td>
+                        <td class="p-2 whitespace-nowrap">Marta Alonso</td>
+                        <td class="p-2 whitespace-nowrap">2023</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 whitespace-nowrap">Pollo al vinagre</td>
+                        <td class="p-2 whitespace-nowrap">Mary Ann Stones</td>
+                        <td class="p-2 whitespace-nowrap">2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
+    </footer>
 
-    <hr class="my-20">
-</main>
-
-<!-- Footer -->
-<footer class="bg-white p-12 max-w-3/4 mx-auto flex flex-col md:flex-row justify-between items-center">
-    <!-- Sección izquierda: Título y redes sociales -->
-    <div class="flex flex-col gap-3 text-lg mb-5 md:mb-0 md:w-2/5 order-2 sm:order-1">
-        <div><strong>Cooking Contest 2024 Edition</strong></div>
-        <div class="flex space-x-4 mt-5 md:mt-20">
-            <a href="#"><i class="fab fa-twitter h-6"></i></a>
-            <a href="#"><i class="fab fa-instagram h-6"></i></a>
-            <a href="#"><i class="fab fa-youtube h-6"></i></a>
-        </div>
-    </div>
-
-    <!-- Sección derecha: Tabla -->
-    <div class="w-full md:w-3/5 order-1 sm:order-2">
-        <table class="w-full table-auto border-separate border-spacing-1">
-            <thead>
-                <tr>
-                    <th class="p-2 text-left">Recetas</th>
-                    <th class="p-2 text-left">Concursantes</th>
-                    <th class="p-2 text-left">Edición</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="p-2">Pasta cajún con mariscos</td>
-                    <td class="p-2">John Cooper</td>
-                    <td class="p-2">2024</td>
-                </tr>
-                <tr>
-                    <td class="p-2">Salmón en tablones de cedro</td>
-                    <td class="p-2">Marta Alonso</td>
-                    <td class="p-2">2023</td>
-                </tr>
-                <tr>
-                    <td class="p-2">Pollo al vinagre</td>
-                    <td class="p-2">Mary Ann Stones</td>
-                    <td class="p-2">2022</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</footer>
+  
 
 </body>
 </html>
